@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.DashboardViewController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="151.0" prefHeight="402.0" prefWidth="590.0" style="-fx-background-image: url(file:///C:/Users/abc/Desktop/Color%20Backgrounds%203.jpg);">
+         <effect>
+            <BoxBlur height="135.54" width="175.0" />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="95.0" fitWidth="377.0" layoutX="111.0" layoutY="63.0">
+         <image>
+            <Image url="@stock-vector-abstract-geometric-background-in-light-shades-148388474.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="63.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="133.0" layoutY="81.0" text="Milk Man Assistant">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <effect>
+            <InnerShadow height="59.55" radius="50.709999999999994" width="145.29" />
+         </effect>
+      </Label>
+      <ImageView fx:id="cr" fitHeight="261.0" fitWidth="195.0" layoutX="203.0" layoutY="226.0" onMouseClicked="#cusregclick" onMouseEntered="#cren" onMouseExited="#crex">
+         <image>
+            <Image url="@personal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rl" fitHeight="84.0" fitWidth="82.0" layoutX="7.0" layoutY="226.0" onMouseClicked="#routinelogclick" onMouseEntered="#rlen" onMouseExited="#rlex">
+         <image>
+            <Image url="@7.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gb" fitHeight="84.0" fitWidth="89.0" layoutX="96.0" layoutY="226.0" onMouseClicked="#generatebillclick" onMouseEntered="#gben" onMouseExited="#gbex">
+         <image>
+            <Image url="@8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rd" fitHeight="169.0" fitWidth="187.0" layoutX="402.0" layoutY="324.0" onMouseClicked="#routinedetailclick" onMouseEntered="#rden" onMouseExited="#rdex">
+         <image>
+            <Image url="@9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cd" fitHeight="84.0" fitWidth="89.0" layoutX="402.0" layoutY="226.0" onMouseClicked="#cusdetailclick" onMouseEntered="#cden" onMouseExited="#cdex">
+         <image>
+            <Image url="@if_Account_Audience_person_customer_profile_user_1886036.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bc" fitHeight="200.0" fitWidth="200.0" layoutY="300.0" onMouseClicked="#billcollectclick" onMouseEntered="#bcen" onMouseExited="#bcex">
+         <image>
+            <Image url="@bill-document.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bl" fitHeight="84.0" fitWidth="89.0" layoutX="496.0" layoutY="226.0" onMouseClicked="#billlogclick" onMouseEntered="#blen" onMouseExited="#blex">
+         <image>
+            <Image url="@_71977a4a770325de431cf40150470fcdf8ad222a906bbd361b_pimgpsh_fullsize_distr_1x.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

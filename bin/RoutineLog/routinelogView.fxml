@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoutineLog.routinelogViewController">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <Label layoutX="229.0" layoutY="57.0" text="Routine Log" textFill="#b91919">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#b21818" />
+         </effect>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <Separator layoutX="12.0" layoutY="141.0" prefHeight="25.0" prefWidth="577.0" />
+      <Button fx:id="btnDelete" layoutX="149.0" layoutY="513.0" mnemonicParsing="false" onAction="#doDelete" text="Delete" textFill="#740fae">
+         <effect>
+            <InnerShadow color="#530f97" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtCQty" layoutX="377.0" layoutY="275.0" prefHeight="25.0" prefWidth="34.0" />
+      <TextField fx:id="txtBQTY" layoutX="492.0" layoutY="275.0" prefHeight="25.0" prefWidth="34.0" />
+      <Label layoutX="378.0" layoutY="247.0" text="Cow QTY" textFill="#5b0b83">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c0f8a" />
+         </effect>
+      </Label>
+      <Label layoutX="490.0" layoutY="247.0" text="Buffalo QTY" textFill="#58109a">
+         <effect>
+            <InnerShadow color="#6a15ab" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="320.0" text="Mobile No" textFill="#5b0b83">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c0f8a" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="457.0" layoutY="318.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="416.0" layoutY="201.0" text="Default Qty" textFill="#ae118a">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#8a0a74" />
+         </effect>
+      </Label>
+      <Label layoutX="415.0" layoutY="369.0" text="Fill Variable Qty" textFill="#ae118a">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#8a0a74" />
+         </effect>
+      </Label>
+      <Label layoutX="378.0" layoutY="408.0" text="Cow QTY" textFill="#5b0b83">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c0f8a" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCQ" layoutX="377.0" layoutY="437.0" onAction="#doCQ" prefHeight="25.0" prefWidth="34.0" />
+      <Label layoutX="490.0" layoutY="408.0" text="Buffalo QTY" textFill="#58109a">
+         <effect>
+            <InnerShadow color="#6a15ab" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBQ" layoutX="492.0" layoutY="437.0" onAction="#doBQ" prefHeight="25.0" prefWidth="34.0" />
+      <CheckBox fx:id="chkSkip" layoutX="425.0" layoutY="486.0" mnemonicParsing="false" onAction="#doSkip" text="Skip" textFill="#7414a4">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5e10a1" />
+         </effect>
+      </CheckBox>
+      <Button fx:id="btnUpdate" layoutX="424.0" layoutY="547.0" mnemonicParsing="false" onAction="#doUpdate" text="Update" textFill="#740fae">
+         <effect>
+            <InnerShadow color="#530f97" />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="16.0" layoutX="394.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_78_Circle-Full_106138.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="16.0" layoutX="394.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_78_Circle-Full_106138.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="151.0" layoutX="28.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@milk.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listname" layoutX="32.0" layoutY="243.0" onMouseClicked="#doselname" prefHeight="200.0" prefWidth="126.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <ListView fx:id="listaddress" layoutX="185.0" layoutY="243.0" onMouseClicked="#doseladdress" prefHeight="200.0" prefWidth="126.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <Label layoutX="50.0" layoutY="181.0" text="Name" textFill="#1e9e14">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#34b019" />
+         </effect>
+      </Label>
+      <Label layoutX="188.0" layoutY="181.0" text="Address" textFill="#1bb81a">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#19b01e" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

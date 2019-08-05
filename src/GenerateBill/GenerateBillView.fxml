@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GenerateBill.GenerateBillViewController">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <Label layoutX="275.0" layoutY="44.0" text="Generate Bill" textFill="#bf1313">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#a41818" />
+         </effect>
+      </Label>
+      <Separator layoutX="21.0" layoutY="128.0" prefHeight="20.0" prefWidth="558.0" />
+      <Label layoutX="194.0" layoutY="165.0" text="Mobile" textFill="#13bd1d">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#26a318" />
+         </effect>
+      </Label>
+      <Label layoutX="56.0" layoutY="165.0" text="Name" textFill="#13bd1d">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#26a318" />
+         </effect>
+      </Label>
+      <ListView fx:id="listmob" layoutX="179.0" layoutY="221.0" onMouseClicked="#doselect" prefHeight="243.0" prefWidth="140.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <ListView fx:id="listname" layoutX="29.0" layoutY="221.0" onMouseClicked="#doSelName" prefHeight="243.0" prefWidth="140.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ListView>
+      <Label layoutX="354.0" layoutY="162.0" text="Month" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="358.0" layoutY="219.0" text="Year" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Separator layoutX="348.0" layoutY="378.0" prefHeight="20.0" prefWidth="200.0" />
+      <Separator layoutX="348.0" layoutY="411.0" prefHeight="20.0" prefWidth="200.0" />
+      <Separator layoutX="408.0" layoutY="326.0" orientation="VERTICAL" prefHeight="136.0" prefWidth="23.0" />
+      <Separator layoutX="480.0" layoutY="326.0" orientation="VERTICAL" prefHeight="136.0" prefWidth="23.0" />
+      <Separator layoutX="348.0" layoutY="342.0" prefHeight="20.0" prefWidth="200.0" />
+      <Label layoutX="369.0" layoutY="356.0" text="Qty" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="369.0" layoutY="390.0" text="Rate" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="369.0" layoutY="424.0" text="Bill" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="430.0" layoutY="325.0" text="Cow" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="510.0" layoutY="325.0" text="Buffalo" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label layoutX="186.0" layoutY="512.0" text="Total" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtBill" layoutX="249.0" layoutY="513.0" prefHeight="25.0" prefWidth="127.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <ImageView fitHeight="120.0" fitWidth="127.0" layoutX="74.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image></ImageView>
+      <Label layoutX="430.0" layoutY="356.0" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtcq" layoutX="430.0" layoutY="356.0" prefHeight="27.0" prefWidth="54.0" text=" " textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtbq" layoutX="510.0" layoutY="356.0" prefHeight="27.0" prefWidth="56.0" text=" " textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtcr" layoutX="429.0" layoutY="390.0" prefHeight="27.0" prefWidth="54.0" text=" " textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtbr" layoutX="510.0" layoutY="390.0" prefHeight="27.0" prefWidth="54.0" text=" " textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtcp" layoutX="430.0" layoutY="424.0" prefHeight="27.0" prefWidth="54.0" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <Label fx:id="txtbp" layoutX="515.0" layoutY="424.0" prefHeight="27.0" prefWidth="54.0" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="combomonth" layoutX="416.0" layoutY="163.0" onAction="#doFill" prefWidth="150.0" />
+      <ComboBox fx:id="comboyear" layoutX="416.0" layoutY="220.0" prefWidth="150.0" />
+      <ImageView fitHeight="27.0" fitWidth="54.0" layoutX="370.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="56.0" layoutX="414.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="357.0" layoutY="273.0" text="Days" textFill="#7115bd">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#5118a1" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="comboday" layoutX="416.0" layoutY="274.0" prefWidth="150.0" />
+      <Button fx:id="btngenbill" layoutX="64.0" layoutY="513.0" mnemonicParsing="false" onAction="#dogenbill" text="Generate Bill" textFill="#5c0c8a">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

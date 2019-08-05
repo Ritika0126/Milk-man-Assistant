@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerRegistration.CustomerRegViewController">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="436.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_Customer_Male_Light_80830.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="47.0" text="Customer Registration" textFill="#bf1818">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#c61c1c" />
+         </effect>
+      </Label>
+      <Label layoutX="69.0" layoutY="147.0" text="Mobile" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="68.0" layoutY="196.0" text="Name" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="68.0" layoutY="241.0" text="Address" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="72.0" layoutY="290.0" text="Area" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="75.0" layoutY="339.0" text="City" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="163.0" layoutY="145.0" />
+      <TextField fx:id="txtName" layoutX="163.0" layoutY="194.0" />
+      <TextField fx:id="txtArea" layoutX="163.0" layoutY="288.0" />
+      <TextField fx:id="txtCity" layoutX="163.0" layoutY="337.0" />
+      <Button fx:id="btnSearch" layoutX="400.0" layoutY="194.0" mnemonicParsing="false" onAction="#doSearch" text="Search" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Label layoutX="75.0" layoutY="399.0" text="Cow" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="75.0" layoutY="442.0" text="Buffalo" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="175.0" layoutY="399.0" text="Quantity" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="175.0" layoutY="442.0" text="Quantity" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="332.0" layoutY="399.0" text="Rate" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <Label layoutX="332.0" layoutY="442.0" text="Rate" textFill="#6a0aa1">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCQty" layoutX="245.0" layoutY="397.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="txtBQty" layoutX="245.0" layoutY="440.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="txtBRate" layoutX="378.0" layoutY="440.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="txtCRate" layoutX="378.0" layoutY="397.0" prefHeight="25.0" prefWidth="37.0" />
+      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="55.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_78_Circle-Full_106138.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="12.0" fitWidth="12.0" layoutX="55.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_78_Circle-Full_106138.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="20.0" layoutY="35.0" prefHeight="12.0" prefWidth="399.0" />
+      <Separator layoutX="20.0" layoutY="100.0" prefHeight="12.0" prefWidth="399.0" />
+      <Separator layoutX="24.0" layoutY="374.0" prefHeight="12.0" prefWidth="545.0" />
+      <Button fx:id="btnNew" layoutX="89.0" layoutY="542.0" mnemonicParsing="false" onAction="#doNew" text="New" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Button fx:id="btnSave" layoutX="178.0" layoutY="542.0" mnemonicParsing="false" onAction="#doSave" text="Save" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="264.0" layoutY="542.0" mnemonicParsing="false" onAction="#doUpdate" text="Update" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="378.0" layoutY="542.0" mnemonicParsing="false" onAction="#doDelete" text="Delete" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Button fx:id="btnClose" layoutX="472.0" layoutY="542.0" mnemonicParsing="false" onAction="#doClose" text="Close" textFill="#610e9c">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0754" />
+         </effect>
+      </Button>
+      <Label layoutX="124.0" layoutY="474.0" prefHeight="27.0" prefWidth="54.0" text="Date" textFill="#6a0aa1">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4c1294" />
+         </effect>
+      </Label>
+      <DatePicker fx:id="datepicker" layoutX="190.0" layoutY="475.0" onAction="#dodatepicker" />
+      <Separator layoutX="24.0" layoutY="510.0" prefHeight="12.0" prefWidth="545.0" />
+      <ImageView fitHeight="113.0" fitWidth="131.0" layoutX="446.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@if_barista-icons_milk-bottle-glass_1046684.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtAddress" layoutX="163.0" layoutY="239.0" />
+   </children>
+</AnchorPane>

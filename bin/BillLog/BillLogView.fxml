@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillLog.BillLogViewController">
+   <children>
+      <Label layoutX="227.0" layoutY="48.0" text="Bill Log" textFill="#c91515">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#b51515" />
+         </effect>
+      </Label>
+      <ImageView fitHeight="122.0" fitWidth="141.0" layoutX="411.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billHome.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="15.0" layoutY="129.0" prefHeight="26.0" prefWidth="567.0" />
+      <Label layoutX="21.0" layoutY="155.0" text="Month" textFill="#551294">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4611a8" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="combomonth" layoutX="92.0" layoutY="156.0" prefHeight="25.0" prefWidth="111.0" />
+      <Label layoutX="253.0" layoutY="155.0" text="Year" textFill="#551294">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4611a8" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="comboyear" layoutX="308.0" layoutY="156.0" prefHeight="25.0" prefWidth="111.0" />
+      <Separator layoutX="17.0" layoutY="186.0" prefHeight="26.0" prefWidth="567.0" />
+      <CheckBox fx:id="chkpaid" layoutX="92.0" layoutY="214.0" mnemonicParsing="false" text="Paid" textFill="#7711bf">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#200ebf" />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="chkpending" layoutX="200.0" layoutY="214.0" mnemonicParsing="false" text="Pending" textFill="#401cbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2d0f96" />
+         </effect>
+      </CheckBox>
+      <Button fx:id="btnexplore" layoutX="342.0" layoutY="212.0" mnemonicParsing="false" onAction="#doexplore" text="Explore" textFill="#310fb9">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2c0fbf" />
+         </effect>
+      </Button>
+      <Separator layoutX="17.0" layoutY="249.0" prefHeight="26.0" prefWidth="567.0" />
+      <Label layoutX="52.0" layoutY="281.0" text="Mobile" textFill="#460dc9">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#4611a8" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="combomobile" layoutX="152.0" layoutY="282.0" prefHeight="25.0" prefWidth="146.0" />
+      <Button fx:id="btnhunt" layoutX="346.0" layoutY="280.0" mnemonicParsing="false" onAction="#dohunt" text="Hunt" textFill="#290ec3">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#381bc6" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="130.0" fitWidth="184.0" layoutX="62.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@milkman-and-his-bicycle-transport-for-milk-bottle-vector-12317808.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="543.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="15.0" layoutY="309.0" prefHeight="26.0" prefWidth="567.0" />
+      <TableView fx:id="tbl" layoutX="28.0" layoutY="342.0" prefHeight="234.0" prefWidth="545.0" />
+      <Button fx:id="btngoogle" layoutX="467.0" layoutY="212.0" mnemonicParsing="false" onAction="#dogoogle" text="Google" textFill="#3613bf">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#1910b2" />
+         </effect>
+      </Button>
+      <Button fx:id="btnfetch" layoutX="467.0" layoutY="154.0" mnemonicParsing="false" onAction="#dofetch" text="Fetch" textFill="#3c0db2">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#2017c6" />
+         </effect>
+      </Button>
+      <Button fx:id="btnexport" layoutX="437.0" layoutY="280.0" mnemonicParsing="false" onAction="#doexport" text="Export to Excel" textFill="#3613bf">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#1910b2" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

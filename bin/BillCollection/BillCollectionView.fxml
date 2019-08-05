@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="600.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/BillCollection/34468348-scratched-white-background-blue-border-Stock-Photo.jpg);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillCollection.BillCollectionViewController">
+   <children>
+      <Label layoutX="180.0" layoutY="28.0" text="Bill Collection" textFill="#d31313">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#cd0e0e" />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="143.0" text="Month" textFill="#5710c9">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#3a0abf" />
+         </effect>
+      </Label>
+      <Separator layoutX="16.0" layoutY="100.0" prefHeight="30.0" prefWidth="564.0" />
+      <ComboBox fx:id="combomonth" layoutX="113.0" layoutY="146.0" prefWidth="150.0" />
+      <Label layoutX="328.0" layoutY="144.0" text="Year" textFill="#5710c9">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#3a0abf" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="comboyear" layoutX="384.0" layoutY="147.0" prefWidth="150.0" />
+      <Separator layoutX="16.0" layoutY="185.0" prefHeight="30.0" prefWidth="564.0" />
+      <Label layoutX="74.0" layoutY="224.0" text="Mobile" textFill="#5710c9">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#3a0abf" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="166.0" layoutY="227.0" />
+      <Button layoutX="394.0" layoutY="227.0" mnemonicParsing="false" onAction="#doshow" text="Show Amount" textFill="#520ea4">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#310fb9" />
+         </effect>
+      </Button>
+      <Separator layoutX="16.0" layoutY="270.0" prefHeight="30.0" prefWidth="564.0" />
+      <Label layoutX="113.0" layoutY="323.0" text="Total Bill" textFill="#5710c9">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#3a0abf" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtbill" layoutX="226.0" layoutY="326.0" />
+      <Button layoutX="248.0" layoutY="391.0" mnemonicParsing="false" onAction="#doupdate" text="Update" textFill="#520ea4">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#310fb9" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="93.0" fitWidth="99.0" layoutX="56.0" layoutY="14.0">
+         <image>
+            <Image url="@Bill-glossy-icon.-Bill-glossy-button-157638.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="69.0" layoutX="364.0" layoutY="374.0">
+         <image>
+            <Image url="@pay_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="270.0" minWidth="500.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/src/LogIn/material-design-1080p-wallpaper_1.jpg);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.LogInViewController">
+   <children>
+      <AnchorPane layoutX="58.0" layoutY="25.0" prefHeight="232.0" prefWidth="368.0" style="-fx-background-image: url(file:///D:/Real%20java/Milkman/stock-vector-abstract-geometric-background-in-light-shades-148388474.jpg);">
+         <effect>
+            <BoxBlur height="77.86" iterations="3" width="54.64" />
+         </effect>
+         <children>
+            <TextField layoutX="35.0" layoutY="104.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="166.0" fitWidth="169.0" layoutX="268.0" layoutY="70.0">
+         <image>
+            <Image url="@password-icon-wallpaper-3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="78.0" text="Admin Key">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Button layoutX="63.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnlogin" text="Log In" textFill="#0a031b">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="177.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnforgot" text="Forgot Key" textFill="#0a031b">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="115.0" layoutY="17.0" text="System Login" textFill="#dd0e0e">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#a41010" />
+         </effect>
+      </Label>
+      <PasswordField fx:id="txtkey" layoutX="93.0" layoutY="128.0" promptText="enter the key" />
+   </children>
+</AnchorPane>
